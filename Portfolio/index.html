@@ -1,0 +1,241 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/01175707eb.js" crossorigin="anonymous"></script>
+ </head>
+ <body>
+    <div id="header">
+      <div class="container">
+         <nav>
+            <img src="images/logo2.png" class="logo">
+            <ul id="sidemenu">
+               <li><a href="#header">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Interests</a></li>
+               <li><a href="#projects">Portfolio</a></li>
+               <li><a href="#contact">Contact me</a></li>
+
+               <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <div class="header-text">
+            <p>Learner</p>
+            <h1>Hi, I am <span>Shubhra Gite.</span><br>A Developer, Programmer & an Artist.</h1>
+         </div>
+      </div>
+
+    </div>
+    <!------------------------------------------------------ABOUT-------------------------------------------------------------------->
+    <div id="about">
+      <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+               <img src="images/posing.png" alt="">
+            </div>
+            <div class="about-col-2">
+               <h1 class="sub-title">About Me:-</h1>
+               <p>I am Shubhra Gite. A driven, hardworking individual with a passion for learning and independent execution. With unwavering determination, I give my all to every responsibility, consistently delivering exceptional results. Energized and enthusiastic, I excel in areas that captivate my attention, achieving excellence through focused dedication. A creative and motivating presence, I bring joy to those around me.</p>
+            
+               <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('techskills')">TechSkills</p>
+                  <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
+               </div>
+               <div class="tab-contents active-tab" id="techskills">
+                  <ul>
+                     <li><span>Languages</span><br>Java and Basic C</li>
+                     <li><span>DSA</span><br>Good with implementation and analysis of DSA.</li>
+                     <li><span>Programming languages, tools and Libraries for Web Developement</span><br>-HTML, CSS & JS. <br>-Bootsrap, Gsap-Js Library.</li>
+                     <li><span>Version Control</span><br>Git</li>
+                  </ul>
+               </div>
+               <div class="tab-contents" id="achievements">
+                  <ul>
+                     <li><span>Kathak</span><br>-Won 1st in solo/duet dance competition @IIT Indore'Fluxus. <br>-Visharad(Sangeet/Nritya Prabhakar) Degree.</Indore></li>
+                     <li><span>Stage appearances & performances</span><br>-India's Got Talent season-8. <br>-Bal-Vigyan senior debator & representator and only competitor from school. <br> many more..</li>
+                     <li><span>Awards</span><br>-Best performer by Guru Pandita Dr. Ragini Makkhar. <br>-Got several awards in Khajuraho Dance Festival, Jal Mahotsav, Malwa utsav, IMC, IRACON 2018 etc.</li>
+                     <li><span>Responsibilities Earned</span><br>-Head of External Affairs @GSPH. <br>-College Cultural Respresentative.</li>
+                  </ul>
+               </div>
+               <div class="tab-contents" id="education">
+                  <ul>
+                     <li><span>Graduation</span><br>BME, Pre-Final year student, S.G.S.I.T.S, Indore.</li>
+                     <li><span>12th</span><br>From Shri gujarati Samaj A.M.N.E.M school with 92.3%</li>
+                     <li><span>10th</span><br>From Shri gujarati Samaj A.M.N.E.M school with 93.4%</li>
+                  </ul>
+               </div>
+            </div>
+         </div> 
+      </div>
+    </div>
+
+    <!-- ----------------------------------------Services------------------------------------------------------------------- -->
+
+    <div id="services">
+      <div class="container">
+         <h1 class="sub-title">Interests & Services:-</h1>
+            <div class="services-list">
+               <div>
+                  <i class="fa-solid fa-crop"></i>
+                  <h2>Web Designing</h2>
+                  <p>As an avid learner in web development, I am deeply interested in designing websites. I am open to providing services in this field, leveraging my passion and expertise to deliver impactful online experiences.</p>
+                  <a href="https://github.com/Shubhragite">Learn more</a>
+               </div>
+               <div>
+                  <i class="fa-regular fa-handshake"></i>
+                  <h2>PR and Communications</h2>
+                  <p>With exceptional communication skills, I excel at connecting and collaborating with diverse individuals. As the Head of External Affairs at GSPH Club, I have successfully fostered meaningful conversations and partnerships across various forums. </p>
+                  <a href="https://www.instagram.com/gsproductionhouse/">Learn more</a>
+               </div>
+               <div>
+                  <i class="fa-solid fa-person-dress"></i>
+                  <h2>Stage Work and Content writing</h2>
+                  <p>With a flair for the stage, I am an accomplished Kathak performer and experienced speaker. Having participated in debates, given impactful speeches, and represented our institution, I am skilled in expressing wisdom through words. As a content writer, I can craft compelling scripts as well.</p>
+                  <a href="https://www.instagram.com/p/CpzFKi8JDp7/">Learn more</a>
+               </div>
+           </div>
+      </div>
+    </div>
+    <!-- -----------------------------------------projects-------------------------------------------------- -->
+    <div id="projects">
+      <div class="container">
+         <h1 class="sub-title">My Projects:-</h1>
+         <div class="project-list">
+            <div class="work">
+               <img src="images/snake.jpg">
+               <div class="layer">
+                  <h3>Slythrin-slither & swallow game</h3>
+                  <p>A captivating Snake Game powered by JavaScript. Experience the thrill of maneuvering the snake with precision, aiming for the highest score. Immerse yourself in the classic gameplay while witnessing the seamless integration of JavaScript's dynamic capabilities.</p>
+                  <a href="https://shubhragite.github.io/Snake-game/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+               </div>
+            </div>
+            <div class="work">
+               <img src="images/candycrush (1).png">
+               <div class="layer">
+                  <h3>Candy Crush Clone</h3>
+                  <p>Inspired by Mahendra Singh Dhoni's viral flight video, I created a delightful Candy Crush game clone using JavaScript. Match colorful candies, aim for high scores, and experience the joy of this addictive adventure. Get ready to indulge in sweet entertainment!</p>
+                  <a href="https://shubhragite.github.io/Candy-crush-clone/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+               </div>
+            </div>
+            <div class="work">
+               <img src="images/movie recommendation system.png">
+               <div class="layer">
+                  <h3>Movie-recommendation-system-using-ML-with-python </h3>
+                  <p>Created a Python movie recommendation system using machine learning, delivering tailored film suggestions based on user preferences.</p>
+                  <a href="https://github.com/Shubhragite/Movie-recommendation-system-using-ML-with-pytho"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+               </div>
+            </div>
+            <div class="work">
+               <img src="images/breast cancerML.jpeg">
+               <div class="layer">
+                  <h3>First project-Landing page</h3>
+                  <p>Built a breast cancer classification system using machine learning, proficient in Python and data analysis. Implemented algorithms for precise tissue sample classification, highlighting analytical skills and commitment to healthcare innovation</p>
+                  <a href="https://github.com/Shubhragite/Snake-game.git"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+               </div>
+            </div>
+         </div>
+
+      </div>
+    </div>
+
+<!-- -----------------------------------------contact---------------------------------------------------------- -->
+<div id="contact">
+   <div class="container">
+      <div class="row">
+         <div class="contact-left">
+            <h1 class="subtitle">Contact Me:-</h1>
+         <p> <i class="fa-solid fa-paper-plane"></i> shubhra1306gite@gmail.com</p>
+         <!-- <p> <i class="fa-solid fa-phone"></i> 8839191988</p> -->
+         <div class="social-icons">
+            <a href="https://www.instagram.com/shubhragite/"><i class="fa-brands fa-square-instagram"></i></a>
+            <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a> -->
+            <a href="https://github.com/Shubhragite"><i class="fa-brands fa-square-github"></i></a>
+            
+         </div>
+         <a href="images/CVaprilupdated_SHUBHRA GITE_.pdf" download class="btn btn2">Download CV</a>
+         </div>
+         <div class="contact-right">
+            <form name="submit-to-google-sheet">
+               <input type="text" name="Name" placeholder="Your Name" required>
+               <input type="email" name="Email" placeholder="Your Email" required>
+               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+               <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+         </div>
+      </div>
+   </div>
+   <div class="copyright">
+      <p>Copyright © Shubhra <i class="fa-solid fa-sparkle"></i></p>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+    <!-- ------------------------------------------javascript-------------------------------------------------- -->
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+         for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+         }
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+      
+      }
+    </script>
+
+    <script>
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+         sidemenu.style.right = "0";
+      }
+      function closemenu(){
+         sidemenu.style.right = "-200px";
+      }
+      
+
+    </script>
+
+ 
+ <script>
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbwGiV1n0oMHOcvzwNLay257GC2DVrv7jp9aTLvFtLqL1vKC9OwZ777vOXd0hDgO5UgS/exec'
+   const form = document.forms['submit-to-google-sheet']
+   const msg = document.getElementById("msg")
+ 
+   form.addEventListener('submit', e => {
+     e.preventDefault()
+     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+       .then(response => {
+         msg.innerHTML = "I'm glad that you texted!❤️"
+         setTimeout(function(){
+            msg.innerHTML = ""
+         },5000)
+         form.reset()
+       })
+       .catch(error => console.error('Error!', error.message))
+   })
+ </script>
+
+ </body>
+ </html>
